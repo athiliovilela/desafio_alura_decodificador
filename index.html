@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt__br">
+
+<head>
+    <meta charset="UTF__8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http__equiv="X__UA__Compatible" content="IE=edge">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__content">
+            <img class="logoalura" src="./assets/logoalura.png" alt="Logo da Alura">
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="container__left">
+            <form class="container__left__form">
+                <textarea id="inputText" class="container__left__form__textarea" cols="35" rows="14" placeholder="Digite seu texto..."></textarea> 
+            </form>
+            <div class="container__left__nota">
+                <img class="container__left__nota__imagem" src="./assets/exclamacao.png" alt="Ícone de exclamação">
+                <spam class="container__left__nota__text">Apenas letras minúsculas e sem acento.</spam>
+            </div>
+            <div class="container__left__botoes">
+                <button class="container__left__botoes__criptografar" type="button" onclick="btncriptografar()">Criptografar</button>
+                <button class="container__left__botoes__descriptografar" type="button" onclick="btnDescriptografar()">Descriptografar</button>
+            </div>
+        </section>
+        <section class="container__right">
+             <div class="container__right__no__result">
+                <img class="container__right__no__result__imagem" src="./assets/boneco.png" alt="Humano procurando com uma lupa">
+                <h2 class="container__right__no__result__title">Nenhuma mensagem <br> encontrada</h2>                	
+                <p class="container__right__no__result__mensagem">Digite o texto que você deseja<br>criptografar ou descriptografar.</p>
+            </div>
+            <div class="container__right__result">
+                    <textarea id="outputText" class="container__right__result__mensagem" rows="10" cols="20"></textarea>
+                    
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        
+        <p class="footer__text">Desenvolvido por <strong>Athilio Vilela de Souza</strong></p> 
+        <div>
+            <a class="footer__text__links" href="https://github.com/athiliovilela">GitHub
+                <img src="/assets/github.png" alt="ícone github">
+            </a> |
+            <a class="footer__text__links" href="https://www.linkedin.com/in/athilio__vilela__de__souza/">LinkedIn
+                <img src="/assets/linkedin.png" alt="ícone linkedin">
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
